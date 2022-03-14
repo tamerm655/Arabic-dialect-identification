@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Machine Learning App with Flask
+		</div>
+		<h2>Arabic Dialects Adentification</h2>
+		
+	</div>
+	</header>
+
+	<center>
+            
+                <h1>Arabic Dialect</h1>
+
+                
+                <form action="/predict" method="POST">
+                    <input type="text" id="fname" name="text" placeholder="ادخل جملة"><br>
+					<input type="submit" value="Submit">
+
+                    <br>
+                </form>
+
+            <br>
+            <br>
+            
+            {{ prediction }}
+        </center>
+
+</body>
+</html>
